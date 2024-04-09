@@ -1,2 +1,2 @@
-<h1>Pascal's Triangle</h1>
-<h2>Algorithm Python</h2>
+<h1>alx-interview</h1>
+<h2>Alx-Interview Preparation</h2>
