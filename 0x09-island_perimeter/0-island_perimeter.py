@@ -3,6 +3,7 @@
 Define `island_perimeter` to calculate the perimeter of an island in a grid.
 """
 
+
 border_4 = set()
 border_3 = set()
 border_2 = set()
@@ -23,24 +24,24 @@ def edges(grid, i, j):
             edges += 1
         elif grid[i-1][j] == 0:
             edges += 1
-    except:
+    except Exception as e:
         edges += 1
     try:
         if grid[i+1][j] == 0:
             edges += 1
-    except:
+    except Exception as e:
         edges += 1
     try:
         if grid[i][j+1] == 0:
             edges += 1
-    except:
+    except Exception as e:
         edges += 1
     try:
         if j == 0:
             edges += 1
         elif grid[i][j-1] == 0:
             edges += 1
-    except:
+    except Exception as e:
         edges += 1
 
     if edges == 1:
@@ -56,7 +57,8 @@ def edges(grid, i, j):
 def island_perimeter(grid):
     """
     Determine and return the perimeter of the island in the given grid.
-    The grid is a rectangular array where 0 represents water and 1 represents land.
+    The grid is a rectangular array where 0 represents
+    water and 1 represents land.
     Each cell is a square with a side length of 1.
     There is only one island in the grid.
     Arguments:
